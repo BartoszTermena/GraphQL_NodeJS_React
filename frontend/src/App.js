@@ -5,11 +5,17 @@ import Auth from './pages/Auth';
 import Events from './pages/Events';
 import Bookings from './pages/Bookings';
 
+import Nav from './toolbar/Nav'
+
+
+
 
 
 class App extends Component {
   render() {
     return (
+      <div>
+      <Nav />
       <BrowserRouter>
       <Switch>
           <Redirect from="/" to="/auth" exact />
@@ -18,6 +24,8 @@ class App extends Component {
           <Route path="/bookings" component={Bookings}/>
         </Switch>
       </BrowserRouter>
+     
+      </div>
     );
   }
 }
