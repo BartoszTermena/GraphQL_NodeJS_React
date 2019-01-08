@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 const SideDrawer = props => {
     let drawerClasses = 'side_drawer';
@@ -8,10 +9,13 @@ const SideDrawer = props => {
     return (<nav className={drawerClasses} >
         <ul>
             <li>
-                <a href="/evets">Events</a>
+                <NavLink to="/auth">Authenticate</NavLink>
             </li>
             <li>
-                <a href="/bookings">Bookings</a>
+                <NavLink to="/events">Events</NavLink>
+            </li>
+            <li>
+                <NavLink to="/bookings">Bookings</NavLink>
             </li>
         </ul>
     </nav>

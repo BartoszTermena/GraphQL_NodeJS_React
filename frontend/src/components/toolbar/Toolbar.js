@@ -1,6 +1,6 @@
 import React from 'react';
 import DrawerToggle from './DrawerToggle';
-
+import { NavLink } from 'react-router-dom';
 
 const Toolbar = props => (
   <header className="toolbar">
@@ -14,12 +14,15 @@ const Toolbar = props => (
         <div className="spacer"></div>
         <div className="toolbar_items">
             <ul>
-                <li>
-                    <a href="/evets">Events</a>
-                </li>
-                <li>
-                    <a href="/bookings">Bookings</a>
-                </li>
+            <li>
+                <NavLink to="/auth">Authenticate</NavLink>
+            </li>
+            <li>
+                <NavLink to="/events">Events</NavLink>
+            </li>
+            <li>
+                <NavLink to="/bookings">Bookings</NavLink>
+            </li>
             </ul>
         </div>
     </nav>
