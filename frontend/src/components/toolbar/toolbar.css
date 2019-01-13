@@ -37,7 +37,7 @@
   }
   .toolbar_items a:hover,
   .toolbar_items a:active {
-    color: #fa923f;
+    color: #B30000;
   }
   @media (max-width: 768px) {
     .toolbar_items {

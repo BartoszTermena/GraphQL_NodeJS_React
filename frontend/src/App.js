@@ -19,10 +19,10 @@ class App extends Component {
         <Nav />
           <main className="main_content">
             <Switch>
-              <Redirect from="/" to="/auth" exact />
+              <Redirect from="/" to="/Auth" exact />
               <Route path="/auth" component={Auth}/>
-              <Route path="/events" component={Events}/>
               <Route path="/bookings" component={Bookings}/>
+              <Route path="/events" component={Events}/>
             </Switch>
           </main>
       </React.Fragment>
