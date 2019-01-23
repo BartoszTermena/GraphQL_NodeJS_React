@@ -36,6 +36,7 @@ class App extends Component {
             <main className="main_content">
               <Switch>
                 {!this.state.token && <Redirect from="/" to="/auth" exact />}
+                {!this.state.token && <Redirect from="/bookings" to="/auth" exact />}
                 {this.state.token && <Redirect from="/" to="/events" exact />}
                 {this.state.token && <Redirect from="/auth" to="/events" exact />}
                 {!this.state.token && <Route path="/auth" component={Auth}/>}

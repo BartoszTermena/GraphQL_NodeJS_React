@@ -24,9 +24,16 @@ const Toolbar = props => (
                     <li>
                         <NavLink to="/events">Events</NavLink>
                     </li>
-                    {context.token && <li>
+                    {context.token && 
+                    ( <React.Fragment>
+                    <li>
                         <NavLink to="/bookings">Bookings</NavLink>
-                    </li>}
+                    </li>
+                    <li>
+                    <a onClick={context.logout}>logout</a>
+                    </li>
+                    </React.Fragment>
+                    )}
                     </ul>
                 </div>
             </nav>
